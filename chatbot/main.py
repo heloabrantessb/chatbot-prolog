@@ -23,6 +23,7 @@ while True:
         print("2 - Buscar um bruxo pelo nome")
         print("3 - Buscar um bruxo pela casa")
         print("4 - Buscar bruxo pelo seu patrono")
+        print("5 - Mostrar detalhes do bruxo")
 
         bruxos_input = input("Escolha uma opção: ")
 
@@ -70,7 +71,6 @@ while True:
 
         elif bruxos_input == "4":
             print("\nDigite o nome do bruxo para consultar seu patrono:")
-            
             bruxo_escolhido = input("Nome do bruxo: ").lower().replace(" ", "_")
             query = f"patrono({bruxo_escolhido}, Patrono)"
             resultados = list(prolog.query(query))
@@ -80,6 +80,30 @@ while True:
                 print(f"O patrono de {bruxo_escolhido.replace('_', ' ').title()} é {patrono}")
             else:
                 print("Bruxo não encontrado")
+
+        elif bruxos_input == "5":
+            nome = input("\nDigite o nome do bruxo para consultar seus detalhes: ").lower().replace(" ", "_")
+            query = f"""
+            personagem({nome}, Casa),
+            patrono({nome}, Patrono),
+            chefe_de_casa(Casa, Chefe)
+            """
+            resultados = list(prolog.query(query))
+
+            if resultados:
+                r = resultados[0]
+                nome = nome.replace("_", " ").title()
+                casa = r["Casa"].replace("_", " ").title()
+                patrono = r["Patrono"].replace("_", " ").title()
+                chefe = r["Chefe"].replace("_", " ").title()
+
+                print(f"\nDetalhes do bruxo {nome}:")
+                print(f"Casa: {casa}")
+                print(f"Patrono: {patrono}")
+                print(f"Chefe da casa: {chefe}")
+                
+            else:
+                print("Bruxo não encontrado ou sem patrono!")
 
         else:
             print("Opção inválida!")
@@ -97,10 +121,10 @@ while True:
                 print(f"- {casa} ({descricao})")
 
     elif menu_input == "3":
-        print("Patronos")
+        print("Patronos")  
 
     elif menu_input == "4":
-        print("Feitiços")
+        print("Feitiços")  
 
     elif menu_input == "0":
         print("Saindo do chat... até mais!")
