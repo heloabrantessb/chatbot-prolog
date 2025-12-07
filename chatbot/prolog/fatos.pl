@@ -1,38 +1,38 @@
 % Bruxos
-personagem(harry potter, grifinoria).
-personagem(hermione granger, grifinoria).
-personagem(rony weasley, grifinoria).
-personagem(draco malfoy, sonserina).
-personagem(luna lovegood, corvinal).
-personagem(cedrico diggory, lufalufa).
+personagem(harry_potter, grifinoria).
+personagem(hermione_granger, grifinoria).
+personagem(rony_weasley, grifinoria).
+personagem(draco_malfoy, sonserina).
+personagem(luna_lovegood, corvinal).
+personagem(cedrico_diggory, lufalufa).
 
 % Patronos
-patrono(harry, 'Cervo').
-patrono(hermione, 'Lontra').
-patrono(rony, 'Cão Terrier').
-patrono(luna, 'Lebre').
-patrono(cedrico, 'Desconhecido').
-patrono(draco, 'Desconhecido').
+patrono(harry_potter, cervo).
+patrono(hermione_granger, lontra).
+patrono(rony_weasley, cao_terrier).
+patrono(luna_lovegood, lebre).
+patrono(cedrico_diggory, desconhecido).
+patrono(draco_malfoy, desconhecido).
 
 % Descrições das casas
-casa(grifinoria, 'Coragem e bravura').
-casa(sonserina, 'Ambição e astúcia').
-casa(lufalufa, 'Lealdade e trabalho duro').
-casa(corvinal, 'Sabedoria e criatividade').
+casa(grifinoria, coragem_e_bravura).
+casa(sonserina, ambicao_e_astucia).
+casa(lufalufa, lealdade_e_trabalho_duro).
+casa(corvinal, sabedoria_e_criatividade).
 
 % Chefe de casa
-chefe_de_casa(grifinoria, 'Minerva McGonagall').
-chefe_de_casa(sonserina, 'Severus Snape').
-chefe_de_casa(lufalufa, 'Pomona Sprout').
-chefe_de_casa(corvinal, 'Filius Flitwick').
+chefe_de_casa(grifinoria, minerva_mcgogagall).
+chefe_de_casa(sonserina, severus_snape).
+chefe_de_casa(lufalufa, pomona_sprout).
+chefe_de_casa(corvinal, filius_flitwick).
 
-% Feitiços e suas descrições
-feitico(expelliarmus, 'Feitiço de desarmamento').
-feitico(lumos, 'Cria luz na ponta da varinha').
-feitico(expecto_patronum, 'Invoca um Patrono contra dementadores').
-feitico(wingardium_leviosa, 'Faz objetos flutuarem').
+% Feitiços
+feitico(expelliarmus, feitico_de_desarmamento).
+feitico(lumos, cria_luz_na_ponta_da_varinha).
+feitico(expecto_patronum, invoca_um_patrono).
+feitico(wingardium_leviosa, faz_objetos_flutuarem).
 
-% Respostas diretas
-resposta(ola, 'Olá! Como posso ajudar?').
-resposta(hogwarts, 'Hogwarts é uma escola de magia e bruxaria').
-resposta(despedida, 'Até logo!!').
+% Respostas
+resposta(ola, ola_como_posso_ajudar).
+resposta(hogwarts, hogwarts_e_uma_escola_de_magia).
+resposta(despedida, ate_logo).
