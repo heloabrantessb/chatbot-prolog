@@ -1,0 +1,7 @@
+services:
+  python:
+    build: .
+    container_name: chatbot-prolog    
+    volumes:
+      - .:/chatbot   
+    working_dir: /chatbot
