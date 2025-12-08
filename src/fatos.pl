@@ -26,7 +26,3 @@ feitico(expelliarmus, feitico_de_desarmamento).
 feitico(lumos, cria_luz_na_ponta_da_varinha).
 feitico(expecto_patronum, invoca_um_patrono).
 feitico(wingardium_leviosa, faz_objetos_flutuarem).
-
-resposta(ola, ola_como_posso_ajudar).
-resposta(hogwarts, hogwarts_e_uma_escola_de_magia).
-resposta(despedida, ate_logo).
